@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+    background-color: cadetblue;
+}
+
+.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+
+/* Navigation Bar */
+nav {
+    background: #45870f;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #054c4b, #02140c);
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.profile-photo {
+    background-image: ;
+    width: 300px;
+    height: 300px;
+    border-radius: 70%; /* Makes the photo circular */
+    overflow: hidden;
+    margin: 0 auto 1.5rem; /* Centers the photo and adds space below */
+    border: 4px solid #7fff00; /* Adds a white border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the photo covers the entire circle */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: #fff;
+    color: #007BFF;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Skills Section */
+.skills {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: #f6e9e9;
+    padding: 2rem;
+    margin: 1rem;
+    width: 20%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 1rem;
+    margin: 1rem;
+    width: 30%;
+    border-radius: 30px;
+    transition: transform 0.3s;
+    border: 3px snow;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #28A745; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 0%;
