@@ -117,15 +117,17 @@ nav ul li a {
 
 .skills-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .skill-card {
     background: #f6e9e9;
     padding: 2rem;
     margin: 1rem;
-    width: 20%;
+    flex: 1 1 calc(50%-2rem);
+    max-width: 300px;
     border-radius: 10px;
     transition: transform 0.3s;
 }
@@ -138,7 +140,11 @@ nav ul li a {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
+@media (max-width: 600px) {  
+    .skill-card {  
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }  
+}
 /* Projects Section */
 .projects {
     padding: 4rem 2rem;
